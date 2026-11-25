@@ -1,0 +1,14 @@
+/target/
+/test-output/
+/reports/
+/screenshots/
+
+# local secrets
+src/test/resources/local.properties
+
+# IDE
+.classpath
+.project
+.settings/
+.idea/
+*.iml

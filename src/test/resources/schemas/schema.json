@@ -1,0 +1,260 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Generated Schema",
+  "type": "object",
+  "properties": {
+    "ip": {
+      "type": "string",
+      "minLength": 2
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "ipv4",
+        "ipv6"
+      ]
+    },
+    "continent_code": {
+      "type": "string"
+    },
+    "continent_name": {
+      "type": "string"
+    },
+    "country_code": {
+      "type": "string"
+    },
+    "country_name": {
+      "type": "string"
+    },
+    "region_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "region_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "city": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "zip": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "msa": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dma": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "radius": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ip_routing_type": {
+      "type": "string"
+    },
+    "connection_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "geoname_id": {
+          "type": "integer"
+        },
+        "capital": {
+          "type": "string"
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "native": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "name",
+              "native"
+            ]
+          }
+        },
+        "country_flag": {
+          "type": "string",
+          "format": "uri"
+        },
+        "country_flag_emoji": {
+          "type": "string"
+        },
+        "country_flag_emoji_unicode": {
+          "type": "string"
+        },
+        "calling_code": {
+          "type": "string"
+        },
+        "is_eu": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "geoname_id",
+        "capital",
+        "languages",
+        "country_flag",
+        "country_flag_emoji",
+        "country_flag_emoji_unicode",
+        "calling_code",
+        "is_eu"
+      ]
+    },
+    "time_zone": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "current_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "gmt_offset": {
+          "type": "integer"
+        },
+        "code": {
+          "type": "string"
+        },
+        "is_daylight_saving": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "current_time",
+        "gmt_offset",
+        "code",
+        "is_daylight_saving"
+      ]
+    },
+    "currency": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "plural": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "symbol_native": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "name",
+        "plural",
+        "symbol",
+        "symbol_native"
+      ]
+    },
+    "connection": {
+      "type": "object",
+      "properties": {
+        "asn": {
+          "type": "integer"
+        },
+        "isp": {
+          "type": "string"
+        },
+        "sld": {
+          "type": "string"
+        },
+        "tld": {
+          "type": "string"
+        },
+        "carrier": {
+          "type": "string"
+        },
+        "home": {
+          "type": "null"
+        },
+        "organization_type": {
+          "type": "null"
+        },
+        "isic_code": {
+          "type": "null"
+        },
+        "naics_code": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "asn",
+        "isp",
+        "sld",
+        "tld",
+        "carrier"
+      ]
+    }
+  },
+  "required": [
+    "ip",
+    "type",
+    "continent_code",
+    "continent_name",
+    "country_code",
+    "country_name",
+    "region_code",
+    "region_name",
+    "city",
+    "zip",
+    "latitude",
+    "longitude",
+    "msa",
+    "dma",
+    "radius",
+    "ip_routing_type",
+    "connection_type",
+    "location"
+  ]
+}
